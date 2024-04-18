@@ -2,16 +2,39 @@
 #system("gnuplot -p 'graf.gp' ");
 ###
 set autoscale
-set output "seno.eps"
+set multiplot layout 3,1 rowsfirst
+#set output "seno.eps"
 set grid
 set style data lines
 
 #-----Grafica 1------
-set title "Señal de entrada"
+#set title "Señal de entrada"
+#unset label
+#set xlabel "n"
+#set ylabel "x(n)"
+plot "data.dat" #Grafica el archivo de datos
+#unset xlabel
+#unset ylabel
+unset title
+
+#-----Grafica 2--------
+#set title "Señal de entrada con ruido"
 #unset label
 set xlabel "n"
 set ylabel "x(n)"
-plot "data.dat" #Grafica el archivo de datos
+plot "data_noise.dat"
+unset xlabel
+unset ylabel
+unset title
+#pause(3)
+#unset multiplot
+
+#-----Grafica 3--------
+#set title "Señal de submuestreada"
+#unset label
+set xlabel "n"
+set ylabel "x(n)"
+plot "subsampling_data.dat"
 unset xlabel
 unset ylabel
 unset title

@@ -12,7 +12,7 @@ set style data lines
 #unset label
 #set xlabel "n"
 #set ylabel "x(n)"
-plot "data.dat" #Grafica el archivo de datos
+plot "1_data.dat" #Grafica el archivo de datos
 #unset xlabel
 #unset ylabel
 unset title
@@ -22,7 +22,7 @@ unset title
 #unset label
 set xlabel "n"
 set ylabel "x(n)"
-plot "data_noise.dat"
+plot "3_data_with_noise.dat"
 unset xlabel
 unset ylabel
 unset title
@@ -34,7 +34,7 @@ unset title
 #unset label
 set xlabel "n"
 set ylabel "x(n)"
-plot "subsampling_data.dat"
+plot "4_subsampling_data.dat"
 unset xlabel
 unset ylabel
 unset title

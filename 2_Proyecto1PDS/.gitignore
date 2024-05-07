@@ -1,7 +1,12 @@
 a.exe
 pruebaC++.cpp
 /Programas
-data.dat
-data_noise.dat
-noise.dat
-subsampling_data.dat
+1_data.dat
+2_noise_file.dat
+3_data_with_noise.dat
+4_subsampling_data.dat
+5_L6_redondeo_data.dat
+5_L6_trunc_data.dat
+flotante.c
+flotante.exe
+

@@ -61,7 +61,11 @@ int main(int argc, char* argv[]){
         samples_L6_truncamiento[i] = samples_noise[i]; //samples_L6[i] = (int)samples_noise[i]; -> casteo
         fprintf(L6_bits_trunc_data, "%d\n", samples_L6_truncamiento[i]);
 
-        samples_L6_redondeo[i] = samples_noise[i] + 0.5;
+        if(samples_noise[i] < 0){
+            samples_L6_redondeo[i] = samples_noise[i] - 0.5;
+        }else{
+            samples_L6_redondeo[i] = samples_noise[i] + 0.5;
+        }
         fprintf(L6_bits_redondeo_data, "%d\n", samples_L6_redondeo[i]);
     }
 
@@ -81,7 +85,6 @@ int main(int argc, char* argv[]){
     error_cuadratico = error_cuadratico / N;
     printf("Error medio cuadratico para la senial cuantizada a 6 bits por redondeo %f \n", error_cuadratico);
 
-
     
     fclose(data);
     fclose(data_with_noise);
@@ -91,10 +94,9 @@ int main(int argc, char* argv[]){
     //GNU PLOT
     //system("gnuplot -p -e 'graf.gp' ");
     //system("gnuplot -p -e \"plot './data.dat' with lines\"");
-    /*
+
     system("gnuplot -p <graf.gp");
     system("gnuplot -p <graf2_quantization.gp");
-*/
     
     return 0;
 }

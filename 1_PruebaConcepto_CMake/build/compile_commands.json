@@ -1,0 +1,14 @@
+[
+{
+  "directory": "A:/Windows/Files/Semestre2024-2/PDS/Programas_PDS_C++/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\PDS.dir\\FormatoNumerico.cpp.obj -c A:\\Windows\\Files\\Semestre2024-2\\PDS\\Programas_PDS_C++\\FormatoNumerico.cpp",
+  "file": "A:/Windows/Files/Semestre2024-2/PDS/Programas_PDS_C++/FormatoNumerico.cpp",
+  "output": "CMakeFiles/PDS.dir/FormatoNumerico.cpp.obj"
+},
+{
+  "directory": "A:/Windows/Files/Semestre2024-2/PDS/Programas_PDS_C++/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\PDS.dir\\Stack.cpp.obj -c A:\\Windows\\Files\\Semestre2024-2\\PDS\\Programas_PDS_C++\\Stack.cpp",
+  "file": "A:/Windows/Files/Semestre2024-2/PDS/Programas_PDS_C++/Stack.cpp",
+  "output": "CMakeFiles/PDS.dir/Stack.cpp.obj"
+}
+]
